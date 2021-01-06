@@ -12,27 +12,29 @@
         <h1 class="title">Список задач</h1>
         <div class="block-note1">
             <div class="input-button">
-                <input type="text" class="input-text" placeholder="Введите названии заметок">
-                <button class="btn add">Добавить</button>
+                <input type="text" id="inpt" class="input-text" placeholder="Введите названии заметок">
+                <button class="btn add" id="btn">Добавить</button>
             </div>
         </div>
         <div class="block-note2">
-
+            <div class="todo-block">
+                <p id="out"></p>
+                <!-- <div class="todo-header">
+                    <input type="checkbox">
+                    <h3>Купить молоко</h3>
+                </div>
+                <div class="todo-footer">
+                    <p>2021.01.06 <span>12:13</span></p>
+                    <div class="action-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                            <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                        </svg>
+                        <img src="" />
+                    </div>
+                </div> -->
+            </div>
         </div>
     </div>
-
-
-    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
-
-    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
-
-    <!-- Add Firebase products that you want to use -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
-
 </body>
 </html>

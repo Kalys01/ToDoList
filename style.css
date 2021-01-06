@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 .container {
     width: 100%;
@@ -73,4 +74,9 @@ button.add{
 button.add:hover {
    background-position: 0 0;
    color:#fff;
+}
+
+.block-note2 {
+    width: 100%;
+    display: flex;
 }

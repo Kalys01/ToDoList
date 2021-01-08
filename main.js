@@ -47,7 +47,7 @@ function starImp(){
     this.closest('.fa-star').classList.toggle('gold');
 }
 
-// Отмечаем на завершении задачи
+// Отмечаем на завершении заметки
 function done(){
     this.closest('.todo-block').classList.toggle('done');
 }

@@ -1,8 +1,8 @@
-let btn = document.getElementById('btn');
-let star = document.querySelector('.fa-star');
+var btn = document.getElementById('btn');
+// let star = document.querySelector('.fa-star');
 var inpt = document.querySelector('.input-text');
 
-let msg = [];
+// let msg = [];
 
 // Добавление через кнопку "Добавить"
 btn.onclick = function(){
@@ -17,12 +17,12 @@ btn.onclick = function(){
 document.querySelector('.input-text').addEventListener('keydown', function(e){
     if(e.keyCode === 13){
         if(empty(this.value)){
-            // let a = this.value.replace(/ +/g, ' ').trim();
+            // let a = this.value.replace(/ +/g, ' ').trim(); // Убираем лишние пробелы
             // console.log(a);
             add(this);
             dataTime();
         }
-        this.value = "";
+        this.value = '';
     }
 })
 
@@ -64,6 +64,7 @@ function add(inpt){
     var elements = {
         block: document.createElement('div'),
         header: document.createElement('div'),
+        faCheck: document.createElement('i'),
         // checkbox: document.createElement('input').type = "checkbox",
         title: document.createElement('h4'),
         footer: document.createElement('div'),
@@ -76,6 +77,7 @@ function add(inpt){
     //Присваиваем элементам нужные классы
     elements.block.classList.add('todo-block');
     elements.header.classList.add('todo-header');
+    elements.faCheck.classList.add('fa', 'fa-check', 'crossed-out');
     // elements.checkbox.classList.add('checkbox');
     elements.title.classList.add('title');
     elements.footer.classList.add('todo-footer');
@@ -86,6 +88,7 @@ function add(inpt){
 
     elements.title.innerHTML = elements.title.innerHTML + fieldValue;
     elements.block.appendChild(elements.header);
+    elements.header.appendChild(elements.faCheck);
     // elements.header.appendChild(elements.checkbox);
     elements.header.appendChild(elements.title);
     elements.block.appendChild(elements.footer);
@@ -98,7 +101,7 @@ function add(inpt){
 
     document.querySelector('.star').addEventListener('click', starImp);
     document.querySelector('.deleteTodo').addEventListener('click', deleteTodo);
-    // document.querySelector('.title').addEventListener('click', done);
+    document.querySelector('.crossed-out').addEventListener('click', done);
 }
 
 

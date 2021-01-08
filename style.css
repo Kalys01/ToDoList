@@ -98,13 +98,14 @@ button.add:hover {
 }
 
 /* Выполненные задачи */
-.block-note2 .done {
+.done {
     text-decoration: line-through;
     color: rgb(105, 105, 105);
 }
 
-.checkbox {
+.fa-check {
     margin: 5px;
+    position: relative;
 }
 
 .todo-header {
@@ -134,9 +135,4 @@ p.dataTime {
 /* Важные задачки */
 .action-button .gold {
     color: yellow;
-}
-
-/* Выполненная задача */
-.todo-block .todo-header h4.done {
-    text-decoration: line-through;
 }

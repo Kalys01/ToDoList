@@ -103,5 +103,3 @@ function add(inpt){
     document.querySelector('.deleteTodo').addEventListener('click', deleteTodo);
     document.querySelector('.crossed-out').addEventListener('click', done);
 }
-
-
